@@ -1,0 +1,11 @@
+name: build
+on:
+  schedule:
+    - cron:  '0 3 * * *'
+jobs:
+  build:
+    runs-on: archlinux
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: makepkg
