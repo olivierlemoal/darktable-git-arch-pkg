@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Delete old release
+        name: Delete old release
         uses: dev-drprasad/delete-older-releases@v0.2.0
         with:
           keep_latest: 0
