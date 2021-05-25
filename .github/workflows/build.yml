@@ -8,15 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Makepkg Build and Check
-        id: makepkg
-        uses: edlanglois/pkgbuild-action@v1
       - name: Delete old release
         uses: dev-drprasad/delete-older-releases@v0.2.0
         with:
           keep_latest: 0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Makepkg Build and Check
+        id: makepkg
+        uses: edlanglois/pkgbuild-action@v1
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
