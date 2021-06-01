@@ -23,7 +23,7 @@ jobs:
           release_name: Latest build ${{ github.ref }}
           draft: false
           prerelease: false
-      - uses: Checkout from AUR
+      - name: Checkout from AUR
         run: git clone https://aur.archlinux.org/darktable-git.git .
       - name: Makepkg Build and Check
         id: makepkg
