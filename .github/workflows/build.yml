@@ -24,6 +24,9 @@ jobs:
           draft: false
           prerelease: false
       - uses: actions/checkout@v2
+        with:
+          repository: https://aur.archlinux.org/darktable-git.git
+          path: .
       - name: Makepkg Build and Check
         id: makepkg
         uses: edlanglois/pkgbuild-action@v1
