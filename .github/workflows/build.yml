@@ -1,7 +1,7 @@
 name: build
 on:
   schedule:
-    - cron:  '0 3 * * *'
+    - cron:  '0 */5 * * *'
   workflow_dispatch:
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: nightly
-          release_name: Latest build ${{ github.ref }}
+          release_name: Latest darktable build
           draft: false
           prerelease: false
       #- name: Checkout from AUR
