@@ -51,7 +51,7 @@ prepare() {
   git config submodule.src/external/libxcf.url "$srcdir/libxcf.git"
   git config submodule.src/external/whereami.url "$srcdir/whereami"
   git config submodule.src/tests/integration.url "$srcdir/darktable-tests.git"
-  git submodule update --init --remote --recursive
+  git submodule update --init --recursive
 }
 
 build() {
