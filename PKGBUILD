@@ -20,7 +20,7 @@ optdepends=('dcraw: base curve script'
             'imagemagick: base curve and noise profile scripts'
             'ghostscript: noise profile script'
             'gnuplot: noise profile script')
-makedepends=(git cmake intltool desktop-file-utils llvm clang python-jsonschema libwebp lua53)
+makedepends=(git cmake intltool desktop-file-utils llvm clang python-jsonschema libwebp lua53 imagemagick)
 conflicts=(darktable)
 provides=(darktable)
 install=darktable.install
