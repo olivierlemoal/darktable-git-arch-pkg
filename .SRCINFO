@@ -16,7 +16,6 @@ pkgbase = darktable-git
 	makedepends = python-jsonschema
 	makedepends = libwebp
 	makedepends = lua53
-	makedepends = imagemagick
 	depends = pugixml
 	depends = libjpeg-turbo
 	depends = colord-gtk
