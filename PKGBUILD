@@ -13,7 +13,7 @@ arch=('i686' 'x86_64')
 url=http://www.darktable.org/
 license=('GPL3')
 depends=(pugixml libjpeg-turbo colord-gtk libgphoto2 openexr lensfun iso-codes zlib
-         exiv2 flickcurl openjpeg2 graphicsmagick lua53 osm-gps-map libsecret openmp
+         exiv2 flickcurl openjpeg2 graphicsmagick osm-gps-map libsecret openmp
          gmic libavif)
 optdepends=('dcraw: base curve script'
             'perl-image-exiftool: base curve script'

@@ -28,7 +28,6 @@ pkgbase = darktable-git
 	depends = flickcurl
 	depends = openjpeg2
 	depends = graphicsmagick
-	depends = lua53
 	depends = osm-gps-map
 	depends = libsecret
 	depends = openmp
